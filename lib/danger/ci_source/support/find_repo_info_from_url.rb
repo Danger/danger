@@ -4,7 +4,7 @@ module Danger
   class FindRepoInfoFromURL
     REGEXP = %r{
       ://[^/]+/
-      (?<slug>[^/]+(/[^/]+){1,2})
+      (?<slug>[^/]+(/[^/]+)*)
       (/(pull|merge_requests|pull-requests)/)
       (?<id>\d+)
     }x
